@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: #85145f;
+}
+
+header {
+    background-color: white;
+    min-height: 65px;
+    padding: 12px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #fff0f6;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+    color: #94166b;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #79134f;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff75ae;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ff75ae;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #a12c65;
+}
+
+.inicio {
+    background-color: #ffd9e8;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px 8%;
+    gap: 40px;
+}
+
+.inicio-texto {
+    max-width: 390px;
+}
+
+.inicio-texto h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.inicio-texto h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-style: italic;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.inicio-texto p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.inicio-imagem {
+    background-color: white;
+    padding: 12px;
+    border-radius: 22px;
+}
+
+.inicio-imagem img {
+    width: 390px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.secao {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.secao h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.subtitulo {
+    color: #a45c83;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    width: 230px;
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px #eac6d7;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.produto h3 {
+    font-size: 15px;
+    margin: 13px 0 8px;
+}
+
+.produto p {
+    color: #95617e;
+    font-size: 12px;
+    line-height: 1.5;
+    min-height: 38px;
+    margin-bottom: 10px;
+}
+
+.produto span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.produto .botao {
+    display: block;
+    padding: 10px;
+}
+
+.destaque {
+    background-color: #681d40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px 8%;
+    gap: 45px;
+}
+
+.destaque img {
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+    border: 12px solid white;
+    border-radius: 20px;
+}
+
+.destaque-texto {
+    max-width: 450px;
+}
+
+.destaque h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.destaque p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.destaque span {
+    font-weight: bold;
+}
+
+.perguntas {
+    background-color: #fff0f6;
+    padding: 55px 15%;
+    text-align: center;
+}
+
+.perguntas h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+details {
+    background-color: white;
+    padding: 17px 20px;
+    margin: 12px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    font-size: 14px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    color: #a45c83;
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.local-texto {
+    max-width: 450px;
+}
+
+.local-texto h4 {
+    margin-bottom: 15px;
+}
+
+.local-texto h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.local-texto p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.endereco {
+    background-color: #fff0f6;
+    padding: 18px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.endereco strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mapa iframe {
+    width: 400px;
+    height: 270px;
+    border: none;
+    border-radius: 15px;
+}
+
+.reserva {
+    background-color: #ffd9e8;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.reserva h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.reserva > p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.reserva form {
+    background-color: white;
+    max-width: 750px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 18px;
+}
+
+.reserva label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+
+.reserva input,
+.reserva select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background-color: white;
+}
+
+.reserva input:focus,
+.reserva select:focus {
+    border-color: #ff75ae;
+}
+
+.reserva form > .botao {
+    margin-top: 20px;
+}
+
+.contato {
+    padding: 65px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contato h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    color: #a45c83;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+.contato .botao {
+    background-color: #a13e6b;
+    border-radius: 30px;
+    padding: 17px 40px;
+}
+
+footer {
+    background-color: #681d40;
+    color: white;
+    padding: 35px 15px;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #f3c6dc;
+    font-size: 13px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .inicio,
+    .destaque,
+    .localizacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-imagem {
+        width: 100%;
+    }
+
+    .inicio-imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    .destaque img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapa iframe {
+        width: 100%;
+    }
+
+    .campos {
+        grid-template-columns: 1fr;
+    }
+
+    .reserva {
+        padding: 40px 5%;
+    }
+
+    .perguntas {
+        padding: 40px 5%;
+    }
+
+    .contato h2 {
+        font-size: 28px;
+    }
+
+}
